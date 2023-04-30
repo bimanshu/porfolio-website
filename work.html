@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+     @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap');
+ body {
+
+        font-family: 'Baloo Bhai 2', cursive;
+
+        color: white;
+        background-color: black;
+        background-size: cover;
+        box-sizing: border-box;
+        
+    }
+    .logo{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 5%;
+    margin-top: 3%;
+   }
+    
+   .logo img{
+    width: 5%;
+    height: 5%;
+   }
+
+   #navcontainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: -3%;
+   }
+
+   #navcontainer a{
+    text-decoration: none;
+    color: white;
+    padding: 0 3%;
+   }
+
+   #navcontainer a:hover{
+
+color: rgb(31, 103, 218);
+}
+
+   #btnn{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -2.5%;
+    margin-right: 5%;
+   }
+   #btnn button{
+    border: 2px solid rgb(31, 103, 218);
+        padding: 10px 40px;
+        font-weight: 900;
+        cursor: pointer;
+        background-color: black;
+        color: white;
+        border-radius: 5px;
+   }
+
+   #btn button:hover{
+    background-color: rgb(31, 103, 218);
+    color: white;
+   }
+   #work1{
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    border: 2px solid rgb(31, 103, 218);
+    border-right: none;
+    margin-top: 5%;
+    height: 22vw;
+    border-radius: 15px; 
+    margin-left: 5%;
+    margin-right: 5%;
+
+
+   }
+
+   #work1 h1{
+    margin-left: 5%;
+
+   }
+  
+#work1 p{
+   font-size: 1.5em;
+   margin-left: 5%;
+
+}
+
+ #divbtn{
+    
+    margin-left: 5%;
+        border: 2px solid rgb(31, 103, 218);
+        padding: 10px 40px;
+        font-weight: 900;
+        cursor: pointer;
+        background-color: black;
+        color: white;
+        border-radius: 5px;
+        width: 12vw;
+
+}
+
+ #divbtn:hover{
+    background-color: rgb(31, 103, 218);
+    color: white;
+}
+
+#rightimg{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: -22.8%;
+}
+
+#img1{
+
+    background-color: rgb(31, 103, 218);
+    height: 22.10vw;
+    width: 40vw;
+    margin-right: 5%;
+    border: 2px solid rgb(31, 103, 218);
+    border-left: none;
+    border-radius: 15px;
+    border-top-left-radius: 0%;
+    border-bottom-left-radius: 0%;
+    overflow: hidden;
+}
+
+#img1 img{
+    height: 22.80vw;
+    width: 40vw;
+}
+/*second work*/
+
+#work2{
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    border: 2px solid rgb(31, 103, 218);
+    border-right: none;
+    margin-top: 5%;
+    height: 22vw;
+    border-radius: 15px; 
+    margin-left: 5%;
+    margin-right: 5%;
+
+
+   }
+
+   #work2 h1{
+    margin-left: 5%;
+
+   }
+  
+#work2 p{
+   font-size: 1.5em;
+   margin-left: 5%;
+
+}
+
+ #divbtn2{
+    
+    margin-left: 5%;
+        border: 2px solid rgb(31, 103, 218);
+        padding: 10px 40px;
+        font-weight: 900;
+        cursor: pointer;
+        background-color: black;
+        color: white;
+        border-radius: 5px;
+        width: 12vw;
+
+}
+
+ #divbtn2:hover{
+    background-color: rgb(31, 103, 218);
+    color: white;
+}
+
+#rightimg2{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: -22.8%;
+}
+
+#img2{
+
+    background-color: rgb(31, 103, 218);
+    height: 22.10vw;
+    width: 40vw;
+    margin-right: 5%;
+    border: 2px solid rgb(31, 103, 218);
+    border-left: none;
+    border-radius: 15px;
+    border-top-left-radius: 0%;
+    border-bottom-left-radius: 0%;
+    overflow: hidden;
+}
+
+#img2 img{
+    height: 22.25vw;
+    width: 40vw;
+}
+    </style>
+<body>
+    <header id="nav">
+        <div class="logo"><img id="logo" src="logo.png" onclick="gotohome()"></div>
+        <div id="navcontainer">
+            <a class href="assignment1.html">Home</a>
+            <a class href="work.html">Projects</a>
+            
+            <a class href="help.html">Help</a>
+        </div>
+           <div id="btnn"> <button> Contact Me</button></div>
+        </header>
+        <div id="container">
+           <div id="work1">
+             <h1>Helping Adonis Creed</h1>
+            <p>An application that helps Adonis to Track and plan <br>his workouts.</p>
+            <button id="divbtn" onclick="redirect()" > View Project</button>
+</div>
+
+<div id="rightimg">
+    <div id="img1"> <img src="Frame 2.jpg" alt=""></div>
+</div>
+</div>
+
+
+<div id="container2">
+    <div id="work2">
+      <h1>Redesigning Zomato for incovinience</h1>
+     <p>Designing zomato to make it incovinient <br>for the users.</p>
+     <button id="divbtn2" onclick="redirect2()" > View Project</button>
+</div>
+
+<div id="rightimg2">
+<div id="img2"> <img src="zomato.jpg" alt=""></div>
+</div>
+</div>
+    <script>
+
+function redirect(){
+               window.location ="work1.html"
+           }
+
+           function redirect2(){
+               window.location ="work2.html"
+           }
+
+           function redirect3(){
+               window.location ="help.html"
+           }
+
+           function gotohome(){
+            window.location="assignment1.html"
+           }
+    </script>
+
+    
+</body>
+</html>

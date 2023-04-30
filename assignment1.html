@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap');
+    body {
+        font-family: 'Baloo Bhai 2', cursive;
+
+        color: white;
+        background-color: black;
+        background-size: cover;
+        
+    }
+
+#heroimg{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 5% ;
+    margin-top: -25%;
+}
+#heroimg img{
+    width: 30%;
+    height: 10%;
+
+}
+/*navigation*/
+
+
+   .logo{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 5%;
+    margin-top: 3%;
+   }
+    
+   .logo img{
+    width: 5%;
+    height: 5%;
+   }
+
+   #navcontainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: -3%;
+   }
+
+   #navcontainer a{
+    text-decoration: none;
+    color: white;
+    padding: 0 3%;
+   }
+#navcontainer a:hover{
+
+    color: rgb(31, 103, 218);
+}
+   #btnn{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -2.5%;
+    margin-right: 5%;
+   }
+
+   #btnn button{
+    border: 2px solid rgb(31, 103, 218);
+        padding: 10px 40px;
+        font-weight: 900;
+        cursor: pointer;
+        background-color: black;
+        color: white;
+        border-radius: 5px;
+   }
+
+   #btnn button:hover{
+    background-color: rgb(31, 103, 218);
+    color: white;
+   }
+
+    .herosection {
+        display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top: 15%;
+    margin-left: 5%;
+        
+    }
+
+    .herosection h2{
+        font-size: 50px;
+        text-align: center;
+    }
+    #heropara{
+        display: flex;
+    justify-content: flex-start;
+    margin-left: 5%;
+    margin-top: -4%;
+    }
+   
+    #heropara p{
+        margin-right: 50%;
+    }
+
+    .herobutton{
+        margin-left: 5%;
+    display: flex;
+    justify-content: flex-start;
+    }
+     .herobutton .btn{
+        border: 2px solid rgb(31, 103, 218);
+        padding: 10px 40px;
+        font-weight: 900;
+        cursor: pointer;
+        background-color: black;
+        color: white;
+        border-radius: 5px;
+
+    }
+.herobutton .btn:hover{
+    background-color: rgb(31, 103, 218);
+    color: white;
+}
+  
+
+
+</style>
+<body>
+    <header id="nav">
+        <div class="logo"><img id="logo" src="logo.png"></div>
+        <div id="navcontainer">
+            <a class href="assignment1.html">Home</a>
+            <a class href="work.html">Projects</a>
+           
+            <a class href="help.html">Help</a>
+        </div>
+           <div id="btnn"> <button onclick="redirect3()"> Contact Me</button></div>
+    
+    </header>
+
+    <div class="herosection" id="herotext">
+    <h2>Hi! I am Bimanshu</h2>
+  
+    </div>
+    <div id="heropara"><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum consequatur natus quod quia ad, doloribus voluptatem quis doloremque, asperiores, minus et iure consectetur hic earum delectus? Ipsam animi placeat labore minus delectus. Iste, modi.</p></div>
+
+    <div class="herobutton"><button class="btn" onclick="redirect()" > My Projects</button></div>
+    
+    <div id="heroimg">
+        <img src="https://images.unsplash.com/photo-1555952517-2e8e729e0b44?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=928&q=80">
+    </div>
+
+    <script>
+        function redirect(){
+               window.location ="work.html"
+           }
+           function redirect3(){
+               window.location ="help.html"
+           }
+    </script>
+</body>
+</html>
